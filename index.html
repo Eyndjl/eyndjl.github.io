@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+
+    <!-- Основные настройки -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Уютный домик Eyndjl'a</title>
+    <meta name="description" content="Просто личный сайт без каких-либо наворотов.">
+    <meta name="keywords" content="eyndjl, dev, discord.py, discord, vk">
+    <meta name="author" content="Eyndjl">
+
+    <!-- Иконки -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link  rel="stylesheet" type="text/css" href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <!-- Слайдер -->
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+    <!-- Стили -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/hormenu.css">
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  </head>
+  <body>
+
+    <!-- Верхнее меню -->
+    <nav class="top-menu">
+            <ul class="menu-main">
+            <li class="left-item"><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Мои нюдсы</a></li>
+            <li class="left-item"><a href="./posts/">Посты</a></li>
+            <audio id="bakuretsu" src="audio/bakuretsu.mp3" preload="auto"></audio>
+            <li class="right-item"><a href="#" onClick="togglePlay()">BAKURETSU</a></li>
+            <li class="right-item"><a href="https://discord.com/users/426390949875417098" target="_blank">Мой Discord</a></li>
+            <li class="right-item"><a href="https://vk.com/eyndjl_uwu" target="_blank">Мой VK</a></li>
+        </ul>
+        <a class="navbar-logo" href=""><img width="75px" height="75px" src="img/logo75px.png"></a>
+    </nav>
+
+    <!-- Основной блок -->
+    <div id="home">
+        <div class="container text-center">
+            </nav>
+            <div class="content">
+                <h4>Wellcum</h4>
+                <hr>
+                <div class="header-text btn">
+                    <h1><span id="head-title"></span></h1>
+                </div>
+            </div>
+            <a href="#about-us" class="down-btn page-scroll">
+                <span class="fa fa-angle-down"></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- about-us блок -->
+    <div id="about-us">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2><font color = "#FFFFFFF">Важная информация(нет)</font></h2>
+                        <hr>
+                    </div>
+                    <FONT SIZE="3">
+                    <p><font color = "#FFFFFFF">Зачем я сделал сайт? Ответ прост: Понятия не имею.<br>Я в HTML не шарю, не говоря уже о CSS и JS, так что не жалуйтесь на дерьмовый дизайн и хреновые скрипты.<br>Кстати, у кого дизайн сломан, нажимаем CTRL+F5 или очищаем кеш браузера.</font></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Нижняя часть -->
+    <nav id="footer">
+        <div class="container">
+            <div class="row text-center">
+                <FONT SIZE="2">
+                <p>При копировании материалов, ссылка на сайт обязательна.<br> 2021 © Eyndjl. All Rights Reserved. <br><a href=https://hostia.ru/billing/host.php?uid=107010 target="_blank" title="Как по мне, самый дешёвый хостинг с:">Сайт работает на Hostia</a></p>
+                </font>
+            </div>
+        </div>
+    </nav>
+
+    <!-- jQuery (дополнительные JS плагины) -->
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!-- Основные плагины -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
+    <script src="js/typed.js"></script>
+    
+    <!-- Настройки скриптов -->
+    <script>
+      $(function(){
+          $("#head-title").typed({
+            strings: ["Я^250", "ХЗ^250" ,"Что^250", "Сюда^350", "Писать^400"],
+            typeSpeed: 100,
+            loop: true,
+            startDelay: 100
+          });
+      });
+    </script>
+    <script>
+        var myAudio = document.getElementById("bakuretsu");
+        var isPlaying = false;
+
+        function togglePlay() {
+        isPlaying ? myAudio.pause() : myAudio.play();
+        };
+
+        myAudio.onplaying = function() {
+        isPlaying = true;
+        };
+        myAudio.onpause = function() {
+        isPlaying = false;
+        };
+    </script>
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
+
+<!-- Данил Садыков - лох -->

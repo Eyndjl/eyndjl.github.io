@@ -1,0 +1,212 @@
+.row{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.files-block{
+    background: #e7e7e7;
+    margin-top:  25px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0;
+    width: 100%;
+    height: 131%;
+}
+.files-block .pic{
+    position: relative;
+    overflow: hidden;
+    transform: scale(1);
+    transition: all 0.3s ease 0s;
+}
+.files-block .pic:after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 900px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    opacity: 0;
+    transform: scale3d(0, 0, 0.5);
+    transform-origin: 50% 50% 0;
+    transition: all 0.35s ease 0s;
+}
+.files-block:hover .pic:after{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+.files-block .pic img{
+    width: 100%;
+    height: 110%;
+}
+.files-block .read-more{
+    width: 100px;
+    padding: 0 15px 15px 0;
+    font-size: 21px;
+    color: #fff;
+    letter-spacing: 0.35px;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration:none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 1;
+    transform: translate3d(20px, 20px, 0px);
+    transition: all 0.35s ease 0s;
+}
+.files-block:hover .read-more{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+.files-block .team-content{
+    padding: 20px 0;
+}
+.files-block .title{
+    font-family : Verdana;
+    font-size: 16px;
+    text-align: left;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    background: #48251d;
+    border: 7px solid #48251d;
+    border-radius: 10px 10px 0px 0;
+}
+.files-block .post{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+.files-block .author{
+    font-family : Verdana;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+.files-block .date{
+    font-family : Verdana;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+.files-block .category{
+    font-family : Verdana;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+.files-block .desc_hr{
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+.row_full{
+    width: 90%;
+    height: auto;
+    margin-left: 3.5%;
+
+}
+.files-block_full{
+    background: #e7e7e7;
+    margin-top:  25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0;
+    width: 100%;
+    height: 150%;
+}
+.files-block_full .pic{
+    position: relative;
+    overflow: hidden;
+    transform: scale(1);
+    transition: all 0.3s ease 0s;
+}
+.files-block_full .pic img{
+    width: 75%;
+    height: auto;
+}
+.files-block_full .read-more{
+    width: 100px;
+    padding: 0 15px 15px 0;
+    font-size: 21px;
+    color: #fff;
+    letter-spacing: 0.35px;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration:none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 1;
+    transform: translate3d(20px, 20px, 0px);
+    transition: all 0.35s ease 0s;
+}
+.files-block_full:hover .read-more{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+.files-block_full .team-content{
+    padding: 20px 0;
+    margin: 15px;
+}
+.files-block_full .title{
+    font-family : Verdana;
+    font-size: 16px;
+    text-align: left;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    background: #48251d;
+    border: 7px solid #48251d;
+    border-radius: 10px 10px 0px 0;
+}
+.files-block_full .post{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+.files-block_full .author{
+    font-family : Verdana;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+.files-block_full .date{
+    font-family : Verdana;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+.files-block_full .category{
+    font-family : Verdana;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+.desc_hr{
+    border: 0;
+}
+@media only screen and (max-width: 990px){
+    .block{ margin-bottom: 30px; }

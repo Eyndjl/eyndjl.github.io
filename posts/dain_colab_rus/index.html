@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Основные настройки -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>дэбильные посты Eyndjl'a</title>
+    <meta name="description" content="Просто личный сайт без каких-либо наворотов.">
+    <meta name="keywords" content="eyndjl, dev, discord.py, discord, vk">
+    <meta name="author" content="Eyndjl">
+
+    <!-- Иконки -->
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="../../css/bootstrap.css">
+    <link  rel="stylesheet" type="text/css" href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../font-awesome-4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jasny-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../../css/file-blocks.css">
+
+    <!-- Слайдер -->
+    <link href="../../css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="../../css/owl.theme.css" rel="stylesheet" media="screen">
+
+    <!-- Стили -->
+    <link rel="stylesheet" type="text/css"  href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="../../css/hormenu.css">
+    <script type="text/javascript" src="../../js/modernizr.custom.js"></script>
+  </head>
+<body>
+  <!-- Верхнее меню -->
+  <nav class="top-menu">
+      <ul class="menu-main">
+      <li class="left-item"><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Мои нюдсы</a></li>
+      <li class="left-item"><a href="../">Посты</a></li>
+      <audio id="bakuretsu" src="../../audio/bakuretsu.mp3" preload="auto"></audio>
+      <li class="right-item"><a href="#" onClick="togglePlay()">BAKURETSU</a></li>
+      <li class="right-item"><a href="https://discord.com/users/426390949875417098" target="_blank">Мой Discord</a></li>
+      <li class="right-item"><a href="https://vk.com/eyndjl_uwu" target="_blank">Мой VK</a></li>
+    </ul>
+    <a class="navbar-logo" href="../../"><img width="75px" height="75px" src="../../img/logo75px.png"></a>
+  </nav>
+    <!-- Контент -->
+<div id="home">
+    <div class="row_full">
+      <div class="files-block_full">
+        <h3 class="title">DAIN Colab v1.6.0 RUS.</h3>
+        <ul>
+          <a href="https://vk.com/eyndjl_uwu" target="_blank"><span class="author" style="margin-bottom: 5px;"></span>Автор: Eyndjl</a></a>
+          <a> | </a>
+          <a><span class="date" style="margin-bottom: 5px;"></span>Дата: 04-01-2022</a>
+          <a> | </a>
+          <a><span class="category" style="margin-bottom: 5px;"></span>Категория: IT</a></a>
+        </ul>
+      <div class="team-content">
+        <a class="post">Ну что-ж, приветствую. Да, спустя 3 месяца я всё-таки делаю пост.</a>
+        <hr class="desc_hr">
+        <a class="post">...</a>
+        <hr class="desc_hr">
+        <a class="post">placeholder</a>
+      </div>
+      </div>
+      <br class="desc_hr"><br class="desc_hr"><br class="desc_hr">
+    </div>
+</div>
+
+<!-- Нижняя часть -->
+<br><br><br><br><br>
+<nav id="footer">
+    <div class="container">
+        <div class="row text-center">
+            <FONT SIZE="2">
+            <p>При копировании материалов ссылка на сайт обязательна.<br> 2022 © Eyndjl. All Rights Reserved.</p>
+            </font>
+        </div>
+    </div>
+</nav>
+</div>
+</body>
+    <!-- jQuery (дополнительные JS плагины) -->
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!-- Основные плагины -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
+    
+    <script>
+        var myAudio = document.getElementById("bakuretsu");
+        var isPlaying = false;
+
+        function togglePlay() {
+        isPlaying ? myAudio.pause() : myAudio.play();
+        };
+
+        myAudio.onplaying = function() {
+        isPlaying = true;
+        };
+        myAudio.onpause = function() {
+        isPlaying = false;
+        };
+    </script>
